@@ -14,7 +14,7 @@
 
 	var defaultKey		= 'gQyjjBA54WARuwxdek7uwWYnftFeavsiIweuwemXhtxwsyA1', // Unique master Xively API key to be used as a default
 		defaultFeeds	= [1492359879], // Comma separated array of Xively Feed ID numbers
-		applicationName	= 'MRMP', // Replaces Xively logo in the header
+		applicationName	= 'Fickleview', // Replaces Xively logo in the header
 		dataDuration	= '90days', // Default duration of data to be displayed // ref: https://xively.com/dev/docs/api/data/read/historical_data/
 		dataInterval	= 10800, // Default interval for data to be displayed (in seconds)
 		dataColor		= 'ED4C0C', // CSS HEX value of color to represent data (omit leading #)
