@@ -149,11 +149,17 @@
 									$('#feed-' + feedId + ' .datastreams .datastream-' + datastream.id + ' .graph').attr('id', 'graph-' + feedId + '-' + datastream.id);
 
 						 			// Build Graph
+						 			var minSet = 0;
+						 			var maxSet = 0;
 						 			
 						 				 if (datastream.id == firstID) {  // 
 										// min: firstMin;
 										// max: firstMax;
 									  	 } else {
+									  	
+									     minSet =  parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
+								  	     maxSet = parseFloat(datastream.max_value) + .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
+
 									  	 }
 						 			         
 						 			         
