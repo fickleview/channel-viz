@@ -22,8 +22,10 @@
 		timeZone        = 14400,  // Seconds
 		firstID         = 'PineRoomTemp',
 		firstMin        = 0,
-		firstMax        = 30;
-		
+		firstMax        = 30,
+		secondID         = 'PineRoomHumidity',
+		secondMin        = 0,
+		secondMax        = 100;
 // Function Declarations
 
 	// URL Parameters
@@ -153,8 +155,8 @@
 						 			var maxSet = 0;
 						 			
 						 				 if (datastream.id == firstID) {  // 
-										// min: firstMin;
-										// max: firstMax;
+										min: firstMin;
+										max: firstMax;
 									  	 } else {
 									  	
 									     minSet =  parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value));
