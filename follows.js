@@ -25,7 +25,11 @@
 		firstMax        = 30,
 		secondID         = 'PineRoomHumidity',
 		secondMin        = 0,
-		secondMax        = 100;
+		secondMax        = 100,
+		thirdID         = 'StoveTemp',
+		thirdMin        = 0,
+		thirdMax        = 100;
+		
 // Function Declarations
 
 	// URL Parameters
@@ -151,6 +155,8 @@
 									$('#feed-' + feedId + ' .datastreams .datastream-' + datastream.id + ' .graph').attr('id', 'graph-' + feedId + '-' + datastream.id);
 
 						 			// Build Graph
+						 			
+						 			// Set the y axis min and max for specific channels
 						 			var minSet = 0;
 						 			var maxSet = 0;
 						 			
@@ -161,12 +167,17 @@
 									  	  if (datastream.id == secondID) {  // 
 											minSet = secondMin;
 											maxSet = secondMax;
+									  	  } else {	
+									  	if (datastream.id == thirdID) {  // 
+											minSet = thirdMin;
+											maxSet = thirdMax;
 									  	  } else {	// All others
 									  	
 									     minSet =  parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value));
 								  	     maxSet =  parseFloat(datastream.max_value) + .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value));
 
-									  	 }
+									  	   }
+									  	  }
 									  	 }
 						 			         
 						 			         
