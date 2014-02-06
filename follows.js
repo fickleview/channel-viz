@@ -171,11 +171,7 @@
 									  	if (datastream.id == thirdID) {  // 
 											minSet = thirdMin;
 											maxSet = thirdMax;
-											var yAxis = new Rickshaw.Graph.Axis.Y({
-											  	graph: graph,
-												tickFormat: Rickshaw.Fixtures.Number.formatKMBT
-												});
-												yAxis.render();
+										
 									  	  } else {	// All others
 									  	
 									     minSet =  parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value));
