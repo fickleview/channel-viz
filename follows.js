@@ -24,7 +24,7 @@
 		firstMin        = 0,
 		firstMax        = 30,
 		secondID         = 'PineRoomHumidity',
-		secondMin        = 0,
+		secondMin        = 20,
 		secondMax        = 100;
 // Function Declarations
 
@@ -155,13 +155,18 @@
 						 			var maxSet = 0;
 						 			
 						 				 if (datastream.id == firstID) {  // 
-										min: firstMin;
-										max: firstMax;
+									   		minSet = firstMin;
+											maxSet = firstMax;
 									  	 } else {
+									  	  if (datastream.id == secondID) {  // 
+											minSet = SecondMax;
+											maxSet = SecondMin;
+									  	  } else {	
 									  	
 									     minSet =  parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value));
 								  	     maxSet =  parseFloat(datastream.max_value) + .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value));
 
+									  	 }
 									  	 }
 						 			         
 						 			         
