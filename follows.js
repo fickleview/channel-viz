@@ -62,7 +62,8 @@
 	Date.prototype.parseISO = function(iso){
 		var stamp= Date.parse(iso);
 		if(!stamp) throw iso +' Unknown date format';
-		return new Date(stamp - timeZone);
+		stamp = stamp -timeZone;
+		return new Date(stamp);
 	}
 
 	// Set xively API Key
@@ -131,7 +132,7 @@
 
 									// Add Each Datapoint to Array
 									datastreamData.datapoints.forEach(function(datapoint) {
-										points.push({x: new Date(datapoint.at).getTime()-timeZone/1000.0, y: parseFloat(datapoint.value)});
+										points.push({x: new Date(datapoint.at).getTime()/1000.0, y: parseFloat(datapoint.value)});
 									});
 
 									// Add Datapoints Array to Graph Series Array
