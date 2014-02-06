@@ -159,8 +159,8 @@
 											maxSet = firstMax;
 									  	 } else {
 									  	  if (datastream.id == secondID) {  // 
-											minSet = SecondMax;
-											maxSet = SecondMin;
+											minSet = SecondMin;
+											maxSet = SecondMax;
 									  	  } else {	
 									  	
 									     minSet =  parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value));
