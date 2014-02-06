@@ -25,7 +25,7 @@
 		firstMax        = 30,
 		secondID         = 'PineRoomHumidity',
 		secondMin        = 0,
-		secondMax        = 100,
+		secondMax        = 60,
 		thirdID         = 'StoveTemp',
 		thirdMin        = 0,
 		thirdMax        = 700;
