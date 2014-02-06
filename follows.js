@@ -154,14 +154,14 @@
 										width: 600,
 										height: 200,
 										renderer: 'area',
-									//if (1) {   // datastream.id == firstID
+										 if (datastream.id == firstID { 
 										 min: firstMin,
-										 max: firstMax,
-									  	 //} else {
+										 max: firstMax;
+									  	 } else {
 										
 										min: parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
 										max: parseFloat(datastream.max_value) + .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
-									//	}
+										}
 									
 										padding: {
 											top: 0.02,
