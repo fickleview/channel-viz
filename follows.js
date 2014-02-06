@@ -18,8 +18,11 @@
 		dataDuration	= '1day', // Default duration of data to be displayed // ref: https://xively.com/dev/docs/api/data/read/historical_data/
 		dataInterval	= 60, // Default interval for data to be displayed (in seconds)
 		dataColor		= 'FFCC99', // CSS HEX value of color to represent data (omit leading #)
-		hideForm		= 1; // To hide input form use value of 1, otherwise set to 0
-		timeZone        = 14400;  // Seconds
+		hideForm		= 1, // To hide input form use value of 1, otherwise set to 0
+		timeZone        = 14400,  // Seconds
+		firstID         = 'PineRoomTemp',
+		firstMin        = 0,
+		firstMax        = 30;
 		
 // Function Declarations
 
@@ -151,6 +154,14 @@
 										width: 600,
 										height: 200,
 										renderer: 'area',
+											if (datastream.id == firstID ) {
+										min: firstMin,
+										max: firstMax,
+										} else {
+										
+										min: parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
+										max: parseFloat(datastream.max_value) + .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
+										}
 										min: parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
 										max: parseFloat(datastream.max_value) + .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
 										padding: {
