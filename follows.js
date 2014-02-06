@@ -28,7 +28,7 @@
 		secondMax        = 100,
 		thirdID         = 'StoveTemp',
 		thirdMin        = 0,
-		thirdMax        = 100;
+		thirdMax        = 700;
 		
 // Function Declarations
 
