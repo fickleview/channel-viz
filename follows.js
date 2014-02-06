@@ -154,7 +154,7 @@
 										width: 600,
 										height: 200,
 										renderer: 'area',
-										 if (datastream.id == firstID) { 
+										 if (0) {  // datastream.id == firstID
 										 min: firstMin;
 										 max: firstMax;
 									  	 } else {
