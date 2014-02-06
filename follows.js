@@ -22,13 +22,13 @@
 		timeZone        = 14400,  // Seconds
 		firstID         = 'PineRoomTemp',
 		firstMin        = 0,
-		firstMax        = 30,
+		firstMax        = 32,
 		secondID         = 'PineRoomHumidity',
 		secondMin        = 0,
-		secondMax        = 60,
+		secondMax        = 57,
 		thirdID         = 'StoveTemp',
 		thirdMin        = 0,
-		thirdMax        = 700;
+		thirdMax        = 720;
 		
 // Function Declarations
 
