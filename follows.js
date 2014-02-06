@@ -24,7 +24,7 @@
 		firstMin        = 0,
 		firstMax        = 30,
 		secondID         = 'PineRoomHumidity',
-		secondMin        = 20,
+		secondMin        = 0,
 		secondMax        = 100;
 // Function Declarations
 
