@@ -155,8 +155,8 @@
 										height: 200,
 										renderer: 'area',
 										 if (datastream.id == firstID) { 
-										 min: firstMin,
-										 max: firstMax,
+										 min: firstMin;
+										 max: firstMax;
 									  	 } else {
 										
 										min: parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
