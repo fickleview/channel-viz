@@ -149,19 +149,24 @@
 									$('#feed-' + feedId + ' .datastreams .datastream-' + datastream.id + ' .graph').attr('id', 'graph-' + feedId + '-' + datastream.id);
 
 						 			// Build Graph
+						 			
+						 				 if (datastream.id == firstID) {  // 
+										// min: firstMin;
+										// max: firstMax;
+									  	 } else {
+									  	 }
+						 			         
+						 			         
 									var graph = new Rickshaw.Graph( {
 										element: document.querySelector('#graph-' + feedId + '-' + datastream.id),
 										width: 600,
 										height: 200,
 										renderer: 'area',
-										 if (0) {  // datastream.id == firstID
-										// min: firstMin;
-										// max: firstMax;
-									  	 } else {
+									
 										
 										min: parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
 										max: parseFloat(datastream.max_value) + .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
-										}
+										
 									
 										padding: {
 											top: 0.02,
