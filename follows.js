@@ -21,7 +21,7 @@
 		hideForm		= 1, // To hide input form use value of 1, otherwise set to 0
 		timeZone        = 14400,  // Seconds
 		firstID         = 'PineRoomTemp',
-		firstMin        = 0,
+		firstMin        = 10,
 		firstMax        = 32,
 		secondID         = 'PineRoomHumidity',
 		secondMin        = 0,
