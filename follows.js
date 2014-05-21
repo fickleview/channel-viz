@@ -21,11 +21,11 @@
 		hideForm		= 1, // To hide input form use value of 1, otherwise set to 0
 		timeZone        = 10800,  // Seconds
 		firstID         = 'PineRoomTemp',
-		firstMin        = 10,
-		firstMax        = 32,
+		firstMin        = 0,
+		firstMax        = 320,
 		secondID         = 'PineRoomHumidity',
-		secondMin        = 0,
-		secondMax        = 57,
+		secondMin        = -300,
+		secondMax        = 300,
 		thirdID         = 'StoveTemp',
 		thirdMin        = 0,
 		thirdMax        = 720;
@@ -274,10 +274,10 @@
 					$('#exampleFeed').clone().appendTo('#feeds').attr('id', 'feed-' + id).removeClass('hidden');
 
 					// ID
-					$('#feed-' + data.id + ' .title .value').html(data.title);
+					//$('#feed-' + data.id + ' .title .value').html(data.title);
 
 					// Title
-					$('#feed-' + data.id + ' .id .value').html(data.id);
+					//$('#feed-' + data.id + ' .id .value').html(data.id);
 
 					// Description
 					if(data.description) {
