@@ -23,7 +23,7 @@
 		firstID         = 'PineRoomTemp',
 		firstMin        = 0,
 		firstMax        = 320,
-		secondID         = 'PineRoomHumidity',
+		secondID         = 'OutsideTemp',
 		secondMin        = -300,
 		secondMax        = 300,
 		thirdID         = 'StoveTemp',
