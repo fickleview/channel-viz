@@ -29,6 +29,10 @@
 		thirdID         = 'StoveTemp',
 		thirdMin        = 0,
 		thirdMax        = 720;
+		fourthID         = 'RainMM',
+		thirdMin        = 0,
+		thirdMax        = 50;
+
 		
 // Function Declarations
 
@@ -171,7 +175,11 @@
 									  	if (datastream.id == thirdID) {  // 
 											minSet = thirdMin;
 											maxSet = thirdMax;
-										
+									  	} else {	
+									  	if (datastream.id == fourthID) {  // 
+											minSet = fourthMin;
+											maxSet = fourthMax;
+											
 									  	  } else {	// All others
 									  	
 									     minSet =  parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value));
