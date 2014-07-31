@@ -186,6 +186,7 @@
 								  	     maxSet =  parseFloat(datastream.max_value) + .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value));
 
 									  	   }
+									     	   }
 									  	  }
 									  	 }
 						 			         
