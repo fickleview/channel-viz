@@ -21,11 +21,11 @@
 		hideForm		= 1, // To hide input form use value of 1, otherwise set to 0
 		timeZone        = 10800,  // Seconds
 		firstID         = 'SunRoomTemp',
-		firstMin        = 0,
+		firstMin        = -5,
 		firstMax        = 320,
 		secondID         = 'OutsideTemp',
 		secondMin        = -300,
-		secondMax        = 300,
+		secondMax        = 350,
 		thirdID         = 'StoveTemp',
 		thirdMin        = 0,
 		thirdMax        = 720;
