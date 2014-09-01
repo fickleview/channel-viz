@@ -31,7 +31,7 @@
 		thirdMax        = 720;
 		fourthID         = 'RainMM',
 		fourthMin        = 0,
-		fourthMax        = 4;
+		fourthMax        = 10;
 
 		
 // Function Declarations
