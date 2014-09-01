@@ -20,7 +20,7 @@
 		dataColor		= 'FFCC99', // CSS HEX value of color to represent data (omit leading #)
 		hideForm		= 1, // To hide input form use value of 1, otherwise set to 0
 		timeZone        = 10800,  // Seconds
-		firstID         = 'PineRoomTemp',
+		firstID         = 'SunRoomTemp',
 		firstMin        = 0,
 		firstMax        = 320,
 		secondID         = 'OutsideTemp',
