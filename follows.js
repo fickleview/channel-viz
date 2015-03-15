@@ -144,8 +144,9 @@
 								if(datastreamData.datapoints) {
 
 									// Add Each Datapoint to Array
+									 TimeZone timezone = TimeZone.getDefault();
 									datastreamData.datapoints.forEach(function(datapoint) {
-										points.push({x: new Date(datapoint.at).getTime()/1000.0-timeZone, y: parseFloat(datapoint.value)});
+										points.push({x: new Date(datapoint.at).getTime() + timezone.getRawOffset()/1000.0, y: parseFloat(datapoint.value)});
 									});
 
 									// Add Datapoints Array to Graph Series Array
