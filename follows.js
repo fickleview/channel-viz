@@ -20,6 +20,7 @@
 		dataColor		= 'FFCC99', // CSS HEX value of color to represent data (omit leading #)
 		hideForm		= 1, // To hide input form use value of 1, otherwise set to 0
 		timeZoneOffsetMs        = -10800,  // Seconds
+		timeZoneOffsetMs1 = TimeZone.getDefault(),
 		firstID         = 'Sunroom-Inside',
 		firstMin        = -5,
 		firstMax        = 32.0,
@@ -33,7 +34,7 @@
 		fourthMin        = 0,
 		fourthMax        = 20;
 
-		TimeZone timezone = TimeZone.getDefault();
+		
 		
 // Function Declarations
 
