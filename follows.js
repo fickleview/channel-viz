@@ -19,7 +19,7 @@
 		dataInterval	= 60, // Default interval for data to be displayed (in seconds)
 		dataColor		= 'FFCC99', // CSS HEX value of color to represent data (omit leading #)
 		hideForm		= 1, // To hide input form use value of 1, otherwise set to 0
-		timeZone        = 14400,  // Seconds
+		timeZoneOffsetMs        = -10800,  // Seconds
 		firstID         = 'Sunroom-Inside',
 		firstMin        = -5,
 		firstMax        = 32.0,
@@ -144,9 +144,9 @@
 								if(datastreamData.datapoints) {
 
 									// Add Each Datapoint to Array
-									 TimeZone timezone = TimeZone.getDefault();
+									// TimeZone timezone = TimeZone.getDefault();
 									datastreamData.datapoints.forEach(function(datapoint) {
-										points.push({x: new Date(datapoint.at).getTime() + timezone.getRawOffset()/1000.0, y: parseFloat(datapoint.value)});
+										points.push({x: new Date(datapoint.at).getTime()/1000.0 +timeZoneOffsetMs, y: parseFloat(datapoint.value)});
 									});
 
 									// Add Datapoints Array to Graph Series Array
