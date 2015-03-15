@@ -33,6 +33,7 @@
 		fourthMin        = 0,
 		fourthMax        = 20;
 
+		TimeZone timezone = TimeZone.getDefault();
 		
 // Function Declarations
 
