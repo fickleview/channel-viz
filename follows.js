@@ -19,7 +19,7 @@
 		dataInterval	= 60, // Default interval for data to be displayed (in seconds)
 		dataColor		= 'FFCC99', // CSS HEX value of color to represent data (omit leading #)
 		hideForm		= 1, // To hide input form use value of 1, otherwise set to 0
-		timeZoneOffsetMs        = -10800,  // Seconds
+		timeZoneOffsetMs        = 0 // -10800,  // Seconds
 	
 		firstID         = 'Sunroom-Inside',
 		firstMin        = -5,
