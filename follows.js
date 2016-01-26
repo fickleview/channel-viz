@@ -21,20 +21,6 @@
 		hideForm		= 1, // To hide input form use value of 1, otherwise set to 0
 		timeZoneOffsetMs        = 0 // -10800,  // Seconds
 	
-		firstID         = 'Sunroom-Inside',
-		firstMin        = -5,
-		firstMax        = 32.0,
-		secondID         = 'Deck-Outside',
-		secondMin        = -30.0,
-		secondMax        = 35.0,
-		thirdID         = 'StoveTemp',
-		thirdMin        = 0,
-		thirdMax        = 720;
-		fourthID         = 'Cold-Storage',
-		fourthMin        = -1,
-		fourthMax        = 15;
-
-		
 		
 // Function Declarations
 
@@ -167,21 +153,21 @@
 						 			var minSet = 0;
 						 			var maxSet = 0;
 						 			
-						 				 if (datastream.id == firstID) {  // 
-									   		minSet = firstMin;
-											maxSet = firstMax;
+						 				 if (datastream.id == 'Basement-Inside' || datastream.id == 'Cold-Storage' || datastream.id == 'Sunroom-Inside'|| datastream.id == 'Prop-Case-Soil' || datastream.id == 'Prop-Case-Air') {  // 
+									   		minSet = -5;
+											maxSet = 30;
 									  	 } else {
-									  	  if (datastream.id == secondID) {  // 
-											minSet = secondMin;
-											maxSet = secondMax;
+									  	  if (datastream.id == 'StoveTemp') {  // 
+											minSet = 0;
+											maxSet = 700;
 									  	  } else {	
-									  	if (datastream.id == thirdID) {  // 
-											minSet = thirdMin;
-											maxSet = thirdMax;
+									  	if (datastream.id == 'Deck-Outside') {  // 
+											minSet = -20;
+											maxSet = 35;
 									  	} else {	
-									  	if (datastream.id == fourthID) {  // 
-											minSet = fourthMin;
-											maxSet = fourthMax;
+									  	if (datastream.id == 'RainMM') {  // 
+											minSet = 0;
+											maxSet = 100;
 											
 									  	  } else {	// All others
 									  	
