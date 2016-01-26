@@ -10,7 +10,7 @@
 		dataInterval	= 10800, // Default interval for data to be displayed (in seconds)
 		dataColor		= '0A1922', // CSS HEX value of color to represent data (omit leading #)
 		hideForm		= 0,
-		rendererType = 'bar';
+		rendererType = 'area';
 	*/
 
 	var defaultKey		= 'BK42UGOoxyUzbrLlbnwMvr4PyhynOc3jeek50iPUome71tQR', // Unique master Xively API key to be used as a default
