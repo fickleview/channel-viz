@@ -19,8 +19,8 @@
 		dataInterval	= 60, // Default interval for data to be displayed (in seconds)
 		dataColor		= 'FFCC99', // CSS HEX value of color to represent data (omit leading #)
 		hideForm		= 1, // To hide input form use value of 1, otherwise set to 0
-		timeZoneOffsetMs        = 0 // -10800,  // Seconds
-	
+		timeZoneOffsetMs        = 0, // -10800,  // Seconds
+		rendererType = 'area'
 		
 // Function Declarations
 
@@ -179,21 +179,17 @@
 									  	  }
 									  	 }
 						 			         
-						 			         
+						 			      	if (datastream.id == 'Motion-In-Kitchen'){
+										rendererType = 'bar';	
+										}
+										
 									var graph = new Rickshaw.Graph( {
 										element: document.querySelector('#graph-' + feedId + '-' + datastream.id),
 										width: 600,
 										height: 200,
-					
+										render: rendererType,
 										
-										if (datastream.id == 'Motion-In-Kitchen')
-										{
-										renderer: 'bar',	
-										}
-										else
-										{
-										renderer: 'area',	
-										}
+									
 										
 										min: minSet,
 										max: maxSet,
