@@ -33,9 +33,6 @@
 		fourthID         = 'RainMM',
 		fourthMin        = 0,
 		fourthMax        = 20;
-		fifthID         = 'Cold-Storage',
-		fifthMin        = -1,
-		fifthMax        = 12.0,
 
 		
 		
@@ -185,12 +182,8 @@
 									  	if (datastream.id == fourthID) {  // 
 											minSet = fourthMin;
 											maxSet = fourthMax;
-									  	} else {	
-									  	if (datastream.id == fifthID) {  // 
-											minSet = fifthMin;
-											maxSet = fifthMax;
-											
-									  	} else {	// All others
+									  
+									  	  } else {	// All others
 									  	
 									     minSet =  parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value));
 								  	     maxSet =  parseFloat(datastream.max_value) + .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value));
