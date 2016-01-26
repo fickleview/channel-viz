@@ -30,9 +30,9 @@
 		thirdID         = 'StoveTemp',
 		thirdMin        = 0,
 		thirdMax        = 720;
-		fourthID         = 'RainMM',
-		fourthMin        = 0,
-		fourthMax        = 20;
+		fourthID         = 'Cold-Storage',
+		fourthMin        = -1,
+		fourthMax        = 15;
 
 		
 		
