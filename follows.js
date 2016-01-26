@@ -185,7 +185,11 @@
 										width: 600,
 										height: 200,
 										renderer: 'area',
-									
+										
+										if (datastream.id == 'Motion-In-Kitchen')
+										{
+										renderer: 'bar',	
+										}
 										
 										min: minSet,
 										max: maxSet,
