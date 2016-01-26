@@ -184,11 +184,15 @@
 										element: document.querySelector('#graph-' + feedId + '-' + datastream.id),
 										width: 600,
 										height: 200,
-										renderer: 'area',
+					
 										
 										if (datastream.id == 'Motion-In-Kitchen')
 										{
 										renderer: 'bar',	
+										}
+										else
+										{
+										renderer: 'area',	
 										}
 										
 										min: minSet,
