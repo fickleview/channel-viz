@@ -169,7 +169,9 @@
 									  	if (datastream.id == 'RainMM') {  // 
 											minSet = 0;
 											maxSet = 100;
-											
+									  	} else {	
+									  	if (datastream.id ==  'Motion-In-Kitchen') {  // 
+											rendererType = 'bar';		
 									  	  } else {	// All others
 									  	
 									     minSet =  parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value));
@@ -180,9 +182,7 @@
 									  	  }
 									  	 }
 						 			         
-						 			      	if (datastream.id == 'Motion-In-Kitchen'){
-										rendererType = 'bar';	
-										}
+						 			      
 										
 									var graph = new Rickshaw.Graph( {
 										element: document.querySelector('#graph-' + feedId + '-' + datastream.id),
