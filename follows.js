@@ -187,10 +187,8 @@
 										element: document.querySelector('#graph-' + feedId + '-' + datastream.id),
 										width: 600,
 										height: 200,
-										render: rendererType,
-										
+										render: 'bar',
 									
-										
 										min: minSet,
 										max: maxSet,
 										
