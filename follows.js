@@ -157,9 +157,9 @@
 									   		minSet = -5;
 											maxSet = 30;
 						 				 } else {
-									  	  if (datastream.id == 'Irrigation-Containers' || datastream.id == 'Irrigation-Front-Garden' || datastream.id == 'Irrigation-Veg-Garden' || datastream.id == 'Irrigation-Hosta-Garden' || datastream.id == 'Irrigation-Herb-South') {  // 
+									  	  if (datastream.id == 'Irrigation-Containers' || datastream.id == 'Irrigation-Front-Garden' || datastream.id == 'Irrigation-Veg-Garden' || datastream.id == 'Irrigation-Herb-South') {  // 
 											minSet = 0;
-											maxSet = 20;
+											maxSet = 10;
 									  	 } else {
 									  	  if (datastream.id == 'StoveTemp') {  // 
 											minSet = 0;
