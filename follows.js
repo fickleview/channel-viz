@@ -156,10 +156,10 @@
 						 				 if (datastream.id == 'Basement-Inside' || datastream.id == 'Cold-Storage' || datastream.id == 'Sunroom-Inside'|| datastream.id == 'Prop-Case-Soil' || datastream.id == 'Prop-Case-Air') {  // 
 									   		minSet = -5;
 											maxSet = 30;
-						 				// } else {
-									  	//  if (datastream.id == 'Irrigation-Containers' || datastream.id == 'Irrigation-Front-Garden' || datastream.id == 'Irrigation-Veg-Garden' || datastream.id == 'Irrigation-Hosta-Garden' || datastream.id == 'Irrigation-Herb-South') {  // 
-										//	minSet = 0;
-										//	maxSet = 20;
+						 				 } else {
+									  	  if (datastream.id == 'Irrigation-Containers' || datastream.id == 'Irrigation-Front-Garden' || datastream.id == 'Irrigation-Veg-Garden' || datastream.id == 'Irrigation-Hosta-Garden' || datastream.id == 'Irrigation-Herb-South') {  // 
+											minSet = 0;
+											maxSet = 20;
 									  	 } else {
 									  	  if (datastream.id == 'StoveTemp') {  // 
 											minSet = 0;
@@ -182,7 +182,7 @@
 									     	   }
 									  	  }
 									  	 }
-						 			         
+						 				}
 						 			      
 										
 									var graph = new Rickshaw.Graph( {
