@@ -189,7 +189,7 @@
 										element: document.querySelector('#graph-' + feedId + '-' + datastream.id),
 										width: 600,
 										height: 200,
-										render: 'scatterplot',
+										renderer: 'scatterplot',
 									
 										min: minSet,
 										max: maxSet,
